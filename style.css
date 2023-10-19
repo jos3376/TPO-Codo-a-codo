@@ -1,0 +1,96 @@
+body {
+    font-family: roboto, sans-serif;
+    margin: 0;
+}
+header{
+    background-image: url(fotos/chocoheader.jpg);
+    display: flex;
+    justify-content:space-around;
+    height: 25px;
+    align-items: center;
+    padding: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{margin-right: 30px;
+    height: 70px;
+}
+nav a{  border-radius: 25px;
+        border-style: solid;
+        border-color: rgb(28, 131, 222);
+        padding:10px;
+        margin: 10px;
+        text-decoration: none;
+        background-color: rgb(242, 242, 179);
+}
+nav a:hover{
+    background-color: #fab929;
+    color:rgb(230, 7, 7);
+    border: 1px solid rgb(244, 247, 239);
+}
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    display:flex ;
+    flex-direction: row;
+}
+main { width: 70%;
+    background-color: #e0bc7085;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: rgb(247, 71, 1);
+    border-style: solid;
+}
+aside {
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    background-color: #e0bc7085;
+    border-radius: 10px;
+    border-color: rgb(247, 71, 1);
+    border-style: solid;
+}
+main p{ color:rgb(12, 11, 3);
+    font-size: x-large;
+    font: bold;
+}
+h2{
+    color:rgb(1, 13, 13);
+    text-align: center;
+}
+.imagen-aguila {
+    width: 100%; 
+    height: auto; 
+}
+.receta{width: 100%; 
+    height: auto;
+}
+iframe {border-radius: 10px;
+    width: 100%; 
+}
+.box{padding-left: 30px;
+    border: rgb(202, 2, 2) solid 4px ;
+    border-radius: 15px;
+}
+footer{color: antiquewhite;
+    display: flex;
+    justify-content:space-between;
+    margin-right: 10px;
+    align-items: center;
+    background-color: rgba(70, 9, 9, 0.957);
+    height: 120px;
+    width: 100%;
+}
+.container-icon img{width: 60px;
+padding: 15px;    
+}
+.container-icon {display: flex;
+    list-style: none;
+}
+footer p{
+    padding: 20px;
+}
+
