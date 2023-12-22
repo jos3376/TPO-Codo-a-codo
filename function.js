@@ -1,7 +1,21 @@
-let edad = prompt("Estás por ingresar a una página de ventas, ingresá tu edad ");
-if (parseInt(edad)>= 18){
-    alert ("sos mayor, puedes ingresar al sitio y realizar compras")
-}
-else{
-    alert ("sos menor, puedes ingresar pero no realizar compras")
-}
+function validarFormulario() {
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var asunto = document.getElementById("asunto").value;
+    var mensaje = document.getElementById("mensaje").value;
+
+    if (nombre.trim() === "" || email.trim() === "" || asunto.trim() === "" || mensaje.trim() === "") {
+        alert("Por favor, complete todos los campos.");
+        return false;
+    }
+
+    // Validación de formato de correo electrónico
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Ingrese un correo electrónico válido.");
+        return false;
+    }
+
+    
+
+    return true;}

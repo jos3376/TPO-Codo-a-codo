@@ -76,14 +76,22 @@
                 de material de envasado, además de poseer una imprenta para todos los envases y una sastrería que confeccionaba la ropa que utilizaba el personal.</p></article>
             <section><H2 id="contacto">Contacto</H2>
                 <div class="box">
-                <form action="action" method="post" >
-                <p>Nombre</p><input type="text" name="Nombre"maxlength="15">
-                <p>Correo electronico</p> <input type="email" name="email" maxlength="15">
-                <p> Asunto</p><input type="text" name="text"maxlength="15">
-                <p> Mensaje:</p>
-                <textarea name="text" cols="22" rows="2" maxlength="30"></textarea>
-                <p><input type="button" value="enviar datos"id="boton"></p>
-                </form></div><br>
+                    <form id="miFormulario" action="/guardar" method="post" onsubmit="return validarFormulario()">
+                        <p>Nombre y Apellido</p>
+                        <input type="text" name="Nombre" id="nombre" maxlength="15" required>
+                    
+                        <p>Correo electrónico</p>
+                        <input type="email" name="email" id="email" maxlength="50" required>
+                    
+                        <p>Asunto</p>
+                        <input type="text" name="asunto" id="asunto" maxlength="50" required>
+                    
+                        <p>Mensaje:</p>
+                        <textarea name="mensaje" id="mensaje" cols="22" rows="2" maxlength="300" required></textarea>
+                    
+                        <p><input type="submit" value="Enviar datos" id="boton"></p>
+                    </form>
+            </div><br>
             </section>
         </aside>
     </div>
